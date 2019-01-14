@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "AlbumRepository.h"
+#import "../BBMInternApp/AlbumRepository.h" //#import "AlbumRepository.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 
 @interface AlbumRepositoryTest : XCTestCase
@@ -36,7 +36,7 @@
 - (void)testRAC_downloadWithRequest {
     XCTestExpectation *expect =  [self expectationWithDescription:@"test"];
     AlbumRepository *albumRepository = [[AlbumRepository alloc] init];
-    RACSignal *sut = [[albumRepository rac_downloadWithRequest]
+    [[albumRepository rac_downloadWithRequest]
                       subscribeNext:^(NSData *_Nullable x) {
                           [expect fulfill];
                       }];
