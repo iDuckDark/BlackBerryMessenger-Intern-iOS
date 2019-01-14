@@ -1,6 +1,0 @@
-framework module Pods_BBMInternApp11Tests {
-  umbrella header "Pods-BBMInternApp11Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,16 +1,12 @@
+# Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
 
-target 'BBMInternApp11' do
+target 'BBMInternApp1' do
   use_frameworks!
-    #platform :ios, '9.0' #deploy platform
-    #pod 'ReactiveCocoa'
+  pod 'ReactiveObjC', '~> 3.0.0'
+end
 
-  target 'BBMInternApp11Tests' do
-    inherit! :search_paths
-  end
-
-  target 'BBMInternApp11UITests' do
-    inherit! :search_paths
-  end
-
+target 'BBMInternAppTests' do
+  use_frameworks!
+  pod 'ReactiveObjC', '~> 3.0.0'
 end

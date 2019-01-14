@@ -1,0 +1,6 @@
+framework module Pods_BBMInternApp1 {
+  umbrella header "Pods-BBMInternApp1-umbrella.h"
+
+  export *
+  module * { export * }
+}
